@@ -1,0 +1,71 @@
+.main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(1, 2, 22);
+  overflow: scroll;
+}
+div.chat {
+  border: 1px solid black;
+  padding: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  color:white;
+  gap: 0.5rem;
+  overflow-y: scroll;
+  background-color: rgb(194, 12, 170);
+}
+div.chat>div:nth-child(odd){
+  background:teal;
+  align-self: flex-end;
+  padding: 4px;
+}
+div.chat>div:nth-child(even){
+  background:rgb(11, 42, 88);
+  align-self: flex-start;
+  padding: 4px;
+}
+div.chat .sender {
+  /* flex: 1; */
+  /* background-color: rgb(182, 134, 228); */
+  width: 80%;
+  /* align-self: flex-end; */
+}
+
+div.chat .recipient {
+  /* flex: 1; */
+  /* background-color: rgb(77, 139, 197); */
+  width: 80%;
+
+  align-self: flex-start;
+}
+
+div.chat .message {
+  margin-bottom: 5px;
+}
+div.chat>div .message:nth-child(even){
+  text-align: start;
+}
+div.chat .time {
+  float: right;
+}
+div.chat .input {
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 10px;
+  display: flex;
+}
+
+div.chat .send {
+  float: right;
+  margin-top: 10px;
+  cursor: pointer;
+ padding:0.5rem;
+}
+div.chat .input .inputf{
+  flex: 1;
+  padding: 0.5rem;
+}
